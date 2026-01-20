@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>A-02 with tailwindcss</title>
+    <link rel="stylesheet" href="tailwind.css">
+</head>
+
+<body class="font-inter  text-[#FFFFFF]">
+    <header>
+        <nav class="flex h-[99px] border-[#ffffff4f] border-b bg-[#1A0B2E] items-center justify-around py-6">
+            <h1 class="text-2xl md:text-5xl font-extrabold cursor-pointer">Tech<span class="text-[#9100F8]">Wave</span></h1>
+            <ul class="hidden md:flex items-center gap-8 ">
+                <li class="px-5 py-4 hover:bg-[#3a225a] rounded-3xl"><a href="#">About</a></li>
+                <li class="px-5 py-4 hover:bg-[#3a225a] rounded-3xl"><a href="#">Episodes</a></li>
+                <li class="px-5 py-4 hover:bg-[#3a225a] rounded-3xl"><a href="#">Host</a></li>
+            </ul>
+            <button class="hidden md:flex items-center gap-1.5 bg-gradient-to-tr from-[#F7E93F] via-[#FB09B4]  to-[#9100F8] rounded-3xl px-4 py-3 text-[16px] font-semibold cursor-pointer hover:from-[#ffea00] hover:via-[#b4007e]  hover:to-[#6200a8]" >Subscribe <i class="fa-solid fa-arrow-right-long"></i></button>
+            <div class="p-4 rounded-[50%]  cursor-pointer hover:bg-[#33165a] md:hidden">
+                <img class="w-full " src="./assets/hamburger-menu.png" alt="">
+            </div>
+        </nav>
+        <section class="h-[calc(100vh-99px)] bg-[url(./assets/hero-bg.png)] bg-no-repeat bg-cover bg-center flex items-center justify-center">
+            <div class=" w-[85%] md:w-[550px] py-[101px] mx-auto flex flex-col items-center ">
+                <div class="bg-[url(./assets/hero-circle.png)] mb-[40px] bg-no-repeat  h-[200px] bg-cover md:h-[350px] w-[200px] md:w-[350px] flex items-center justify-center">
+                    <img class="w-[80px] md:w-[100px]" src="./assets/microphone.png" alt="">
+                </div>
+                <h1 class="font-extrabold text-[60px]">TechWave</h1>
+                <p class="mt-2 mb-6 text-[16px] text-[#9e9e9e] text-center">Your daily dose of tech insights, productivity hacks, and personal growth</p>
+                <div class="flex items-center gap-2">
+                    <button class="bg-gradient-to-tr from-[#F7E93F] via-[#FB09B4]  to-[#9100F8] rounded-3xl  px-4 py-3 text-[12px] md:text-[16px] font-semibold cursor-pointer hover:from-[#ffea00] hover:via-[#b4007e]  hover:to-[#6200a8] flex items-center gap-2" ><i class="fa-brands fa-spotify"></i> Listen on Spotify</button>
+                    <button class="flex items-center gap-2 border-[#00FF88] border-1 rounded-3xl px-4 py-3 text-[12px] md:text-[16px] font-semibold cursor-pointer text-[#00FF88] hover:border-[#16a864] hover:text-[#16a864]"><i class="fa-regular fa-envelope"></i> Subscribe</button>
+                </div>
+            </div>
+        </section>
+    </header>
+</body>
+</html>
